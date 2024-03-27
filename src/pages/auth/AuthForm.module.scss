@@ -1,0 +1,73 @@
+.userContainer {
+    display: none;
+}
+
+
+.auth {
+    display: flex;
+    height: 100vh;
+
+    justify-content: flex-end;
+
+    form {
+        width: 95%;
+    max-width: 25rem;
+    text-align: center;
+    color: white;
+    background-color:var(--accent-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+        .control {
+            margin-bottom: 0.5rem;
+
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            input {
+                background-color: lightgray;
+                border-radius: 5px;
+                color: teal;
+                border: 1px solid teal;
+                width: 100%;
+                text-align: left;
+                padding: 0.25rem;
+            }
+        }
+
+        .actions {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                cursor: pointer;
+                color: white;
+                background-color: cadetblue;
+                border: 1px solid white;
+                border-radius: 5%;
+                padding: 0.5rem 2.5rem;
+
+                &:hover {
+                    background-color: lightblue;
+                    border: cadetblue;
+                }
+            }
+
+            .toggle {
+                margin-top: 1rem;
+                background-color: transparent;
+                color: white;
+                border: none;
+                padding: 0.15rem 1.5rem;
+            }
+        }
+
+    }
+}

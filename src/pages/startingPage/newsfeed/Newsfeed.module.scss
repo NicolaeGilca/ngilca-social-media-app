@@ -1,0 +1,146 @@
+
+
+.mainPost {
+    width: 100%;
+    border: transparent;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+    background-color: var(--bg-color);
+    border-radius:  10px 10px 10px 10px;
+    color:  var(--text-color);
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .userInfo {
+        background-color: var(--bg-color);
+        display: flex;
+        margin: 1rem 0rem;
+        justify-content: space-between;
+        align-items: center;
+        
+          
+            .profileInfo {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+               
+            }
+            .profilePictureImg {
+                height: 2.5rem;
+                width: 2.5rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .contextMenu {
+                
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                &:hover {
+                    border: 1px solid teal;
+                }
+            }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 1rem;
+
+
+        
+
+        p {
+            align-self: flex-start;
+            text-align: justify;
+        }
+        .imageWrapper {
+            position: relative;
+
+            .mainPostImage {
+                max-width: 100%;
+                border-radius: 5%;
+            }
+            .infoIcon {
+                cursor: pointer;
+                position: absolute;
+                right: 3rem;
+                color: var(--accent-color);
+                bottom: -1rem;
+            }
+        }
+    }
+
+    .reacts {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+        
+        
+        .likesNumber {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    }
+    .reactsContainer {
+        display: flex;
+        gap: 2rem;
+
+
+        .commentNumber {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+        }
+        .sharesNumber {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+        }
+
+    }
+
+    .reactsActions {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5rem 0;
+        gap: 1rem;
+        border-top: 1px solid var(--text-second-color);
+        border-bottom: 1px solid var(--text-second-color);
+        padding: 1rem 0;
+        
+
+        .reaction {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 10px;
+            align-items: center;
+            background-color: var( --text-second-color);
+            padding: 10px 0;
+            width: 100%;
+            transition: 0.2s ease-in;
+            &:hover {
+                background-color: lightgray;
+                color: var(--bg-color);
+            }
+    
+            &.blue {
+                color: var(--text-color);
+                background-color: var(--accent-color)
+            };
+            
+        }
+    }
+}

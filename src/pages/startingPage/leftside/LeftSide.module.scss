@@ -1,0 +1,50 @@
+
+
+
+
+.menuContainer {
+    width: 20%;
+    background-color: var(--bg-color);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+.menuList {
+display: flex;
+flex-direction: column;
+gap: 0.1rem;
+
+.menuItem {
+    padding: 5px 0;
+  
+    a { 
+        
+        padding: 10px 0 10px 10px ;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        
+        &:hover {
+           
+            background-color:var(--bg-second-color);
+        }
+        &:global.active {
+            border-left: 5px solid var(--accent-color) ;
+            padding-left:5px;
+            background-color: var( --bg-active);
+
+        }
+        
+    }
+    
+}
+}
+
+
+.menuItem > :global.active {
+    
+    
+}

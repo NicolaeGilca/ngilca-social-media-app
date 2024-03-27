@@ -1,0 +1,33 @@
+.suggestionContainer {
+    margin: 10px 5px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--bg-color);
+
+    .suggestionTitele {
+
+    }
+    .suggestionContent {
+
+    }
+    .suggestionList {
+
+    }
+    .suggestionItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       padding: 10px 0;
+
+    }
+    .suggestionProfile {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+  
+}
