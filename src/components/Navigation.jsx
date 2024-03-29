@@ -20,21 +20,15 @@ const Navigation = () => {
           <img src={flow} width="50" height="50" alt="logo" />
         </div>
       </Link>
-
       <div>
         <div className={styles.menu}>
-          {/* <li className={styles.menuItem}>
-            <NavLink to="/my-profile">My Profile</NavLink>
-          </li> */}
-          {/* <li className={styles.menuItem}>
-            <NavLink to="/friends">Friends</NavLink>
-          </li> */}
-
-          <div>
-            {/* <DarkMode /> */}
-            <div>
-              <NavLink to="/">{isLoggedIn ? true : <User />}</NavLink>
+          <div className={styles.menuItem}>
+            <div className={styles.darkMode}>
+              {isLoggedIn ? <button>DarkMode</button> : false}
             </div>
+          </div>
+          <div className={styles.menuItem}>
+            <NavLink to="/my-profile">{isLoggedIn ? <User /> : false}</NavLink>
           </div>
           <div className={styles.menuItem} onClick={toggleAuth}>
             <NavLink to="/auth">{isLoggedIn ? "Logout" : "Login"}</NavLink>

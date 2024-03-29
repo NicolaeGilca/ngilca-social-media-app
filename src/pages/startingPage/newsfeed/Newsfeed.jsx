@@ -59,7 +59,7 @@ const Newsfeed = ({ postData }) => {
               className={styles.profilePictureImg}
             />
           </Link>
-          <Link to="/me">U{name}</Link>
+          <Link to="/me">User</Link>
         </div>
 
         <div className={styles.contextMenu}>

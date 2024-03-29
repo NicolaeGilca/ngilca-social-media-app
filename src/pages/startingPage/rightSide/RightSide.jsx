@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 // import profilePhoto from "/src/pages/startingPage/rightSide/imgs/profilephoto.jpeg";
 import Suggestion from "./suggestions/Suggestion";
+import styles from "./suggestions/Suggestion.module.scss";
 const RightSide = () => {
   const userInfo = {
     username: "Nicolas G",

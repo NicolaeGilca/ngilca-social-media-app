@@ -117,6 +117,7 @@ const CommentsSection = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+
     setListOfComments((prevState) => {
       const myComment = {
         id: prevState.length,
@@ -126,6 +127,7 @@ const CommentsSection = () => {
       };
 
       setNewComment("");
+
       return [myComment, ...prevState];
     });
   };

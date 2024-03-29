@@ -3,8 +3,7 @@
 
 
 .menuContainer {
-    width: 20%;
-    background-color: var(--bg-color);
+    width: 18%;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -18,7 +17,7 @@ gap: 0.1rem;
 
 .menuItem {
     padding: 5px 0;
-  
+
     a { 
         
         padding: 10px 0 10px 10px ;
@@ -30,8 +29,11 @@ gap: 0.1rem;
         &:hover {
            
             background-color:var(--bg-second-color);
+            border-radius: 0% 10px 10px 0%;
+
         }
         &:global.active {
+            border-radius: 0% 10px 10px 0%;
             border-left: 5px solid var(--accent-color) ;
             padding-left:5px;
             background-color: var( --bg-active);
@@ -43,8 +45,3 @@ gap: 0.1rem;
 }
 }
 
-
-.menuItem > :global.active {
-    
-    
-}
