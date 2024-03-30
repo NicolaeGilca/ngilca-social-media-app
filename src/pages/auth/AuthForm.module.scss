@@ -1,3 +1,5 @@
+
+
 .userContainer {
     display: none;
 }
@@ -19,7 +21,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap:2rem;
         .control {
             margin-bottom: 0.5rem;
 
@@ -30,13 +32,11 @@
             }
 
             input {
-                background-color: lightgray;
                 border-radius: 5px;
-                color: teal;
-                border: 1px solid teal;
+                border: 1px solid white;
                 width: 100%;
                 text-align: left;
-                padding: 0.25rem;
+            padding: 0.5rem;
             }
         }
 
@@ -47,16 +47,17 @@
             align-items: center;
 
             button {
+                font-weight: 700;
                 cursor: pointer;
-                color: white;
-                background-color: cadetblue;
+                color: var(--text-color);
+                background-color: var(--bg-second-color);
+
                 border: 1px solid white;
-                border-radius: 5%;
+                border-radius: 4rem;
                 padding: 0.5rem 2.5rem;
 
                 &:hover {
-                    background-color: lightblue;
-                    border: cadetblue;
+                background-color: var(--accent-color);
                 }
             }
 
@@ -64,8 +65,8 @@
                 margin-top: 1rem;
                 background-color: transparent;
                 color: white;
+                text-decoration: underline;
                 border: none;
-                padding: 0.15rem 1.5rem;
             }
         }
 

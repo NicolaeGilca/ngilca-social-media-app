@@ -15,6 +15,14 @@ const RightSide = () => {
   const [followers, setFollowers] = useState(5);
   const [following, setFollowing] = useState(10);
 
+  const updateFollowing = (action) => {
+    if (action === "increment") {
+      setFollowing((prevFollowing) => prevFollowing + 1);
+    } else if (action === "decrement") {
+      setFollowing((prevFollowing) => prevFollowing - 1);
+    }
+  };
+
   return (
     <>
       <div className={style.userProfile}>
@@ -61,7 +69,7 @@ const RightSide = () => {
           </form>
         </div>
       </div>
-      <Suggestion />
+      <Suggestion following={following} updateFollowing={updateFollowing} />
     </>
   );
 };

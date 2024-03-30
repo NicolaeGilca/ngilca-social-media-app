@@ -11,20 +11,68 @@ header {
  
 
     .logo {
-        color: white;
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
     }
 
     .menu {
         list-style: none;
         display: flex;
         align-items: center;
-        gap: 1rem;
-        .menuItem {
-           
-            a {
-                color: white;
-                text-decoration: none;                
+        gap: 5.5rem;
+        a {
+            color: var(--text-color);
+            text-decoration: none;   font-weight: 700;             
+        }
+        .darkmodeItem {
+            width: 5rem;
+            background-color: var(--bg-second-color);
+            border-radius: 50px;
+        }
+        .menuItemProfile {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            
+            .modeBtn {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                font-size: 14px;
+                padding: 0.5rem ;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: 0.2 ease-in-out;
+                border: none;
             }
+           
+           
         }
     }
+}
+
+
+.dark {
+    transition: 0.2s ease-in-out;
+    transform: translateX(50%);
+    align-items: flex-end;
+    button {
+        background-color: white;
+        color: black;
+
+    }
+}
+
+.light {
+    transition: 0.2s ease-in-out;
+
+    transform: translateX(0%);
+
+    button {
+        background-color: black;
+        color: white;
+    
+        }
 }

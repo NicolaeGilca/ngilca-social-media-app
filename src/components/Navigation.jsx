@@ -2,7 +2,11 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import styles from "./Navigation.module.scss";
 import { useState } from "react";
 import User from "./User";
-import flow from "../assets/icons/logoflow.ico";
+import flow from "../assets/icons/logoflow.png";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import LogoutIcon from "@mui/icons-material/Logout";
+import LoginIcon from "@mui/icons-material/Login";
 
 const Navigation = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
@@ -13,25 +17,40 @@ const Navigation = () => {
     setIsLoggedIn((prevState) => !prevState);
   };
 
+  const [isLightMode, setIsLightMode] = useState(true);
+
+  const lightModeHandler = () => {
+    isLightMode
+      ? document.body.classList.add("lightMode")
+      : document.body.classList.remove("lightMode");
+
+    setIsLightMode((prevState) => !prevState);
+  };
   return (
     <header>
       <Link to="/">
         <div className={styles.logo}>
-          <img src={flow} width="50" height="50" alt="logo" />
+          <img src={flow} width="70" height="70" alt="logo" />
         </div>
       </Link>
       <div>
         <div className={styles.menu}>
-          <div className={styles.menuItem}>
-            <div className={styles.darkMode}>
-              {isLoggedIn ? <button>DarkMode</button> : false}
+          <div className={styles.menuItemProfile}>
+            <div className={styles.darkmodeItem}>
+              <div className={`${isLightMode ? styles.dark : styles.light}`}>
+                {isLoggedIn ? (
+                  <button className={styles.modeBtn} onClick={lightModeHandler}>
+                    {isLightMode ? <LightModeIcon /> : <DarkModeIcon />}
+                  </button>
+                ) : null}
+              </div>
             </div>
-          </div>
-          <div className={styles.menuItem}>
             <NavLink to="/my-profile">{isLoggedIn ? <User /> : false}</NavLink>
           </div>
           <div className={styles.menuItem} onClick={toggleAuth}>
-            <NavLink to="/auth">{isLoggedIn ? "Logout" : "Login"}</NavLink>
+            <NavLink to="/auth">
+              {isLoggedIn ? <LogoutIcon /> : <LoginIcon />}
+            </NavLink>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const USER_LIST = [
   { id: 5, user_name: "Constance", nickname: "Heindle" },
 ];
 
-const Suggestion = () => {
+const Suggestion = ({ updateFollowing }) => {
   const [suggestions, setSuggestions] = useState(USER_LIST);
 
   const handleFollow = (id) => {
@@ -24,6 +24,13 @@ const Suggestion = () => {
           : suggestion
       )
     );
+
+    const suggestion = suggestions.find((suggestion) => suggestion.id === id);
+    if (suggestion.isFollowed) {
+      updateFollowing("decrement");
+    } else {
+      updateFollowing("increment");
+    }
   };
 
   return (

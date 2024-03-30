@@ -9,7 +9,24 @@
   --accent-color: #430ec9;
   --main-title-color: #fff;
   --second-title-color: #858585;
+  --text-accent-btn:#fff;
+
 }
+
+.lightMode {
+  --btn-color:#0E48C9;
+  --bg-second-color:#dbdbdb;
+  --text-color:#010101;
+  --text-second-color:#cccccc;
+  --bg-color: #ffffff;
+  --bg-active: #F6F6F6;
+  --accent-color: #430ec9;
+  --main-title-color: #000000;
+  --second-title-color: #7e7e7e;
+  --text-accent-btn:#fff;
+}
+
+
 .swiper-button-next::after  {
   font-size: 1.5rem !important;
   color: white;
