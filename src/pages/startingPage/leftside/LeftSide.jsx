@@ -23,8 +23,9 @@ const LeftSide = () => {
           </li>
           <li className={styles.menuItem}>
             <NavLink to="/messages">
+              <div></div>
               <MessageOutlinedIcon />
-              Messages
+              Messages <div className={styles.messagesNum}>3</div>
             </NavLink>
           </li>
           <li className={styles.menuItem}>

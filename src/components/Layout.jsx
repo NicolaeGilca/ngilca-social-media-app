@@ -1,17 +1,20 @@
-import { useEffect } from "react";
 import PropTypes from "prop-types";
-import { useLocation } from "react-router-dom";
 import Navigation from "./Navigation";
-import RightSide from "../pages/startingPage/rightSide/RightSide";
+import LeftSide from "../pages/startingPage/leftside/LeftSide";
+import style from "./Layout.module.scss";
 
 const Layout = ({ children }) => {
-  // Verifică dacă ruta curentă este "/auth"
-
   return (
     <>
-      <Navigation />
-
-      <main>{children}</main>
+      <div className={style.layoutContainer}>
+        <div className={style.layoutNavigation}>
+          <Navigation />
+        </div>
+        <div className={style.layoutLeftSide}>
+          <LeftSide />
+        </div>
+        <main className={style.layoutMain}>{children}</main>
+      </div>
     </>
   );
 };

@@ -1,61 +1,63 @@
 .userProfile {
-    margin: 2rem 0.5rem;
-    padding: 0.8rem 0.8rem;
+ 
+    margin: 1rem 0.5rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    background-color: var(--bg-color);
+    gap: 0.5rem;
+}
 
-    .userProfileImg {
-     position: relative;
+.userProfileContent {
+    background-image: url(./imgs/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
      margin-bottom: 2rem;
+     padding: 1rem 2rem;
+     border-radius: 10px;
 
-    .userBackgroundImg {
-    align-items: center;
-
-        img {
-        border-radius: 10px;
-        width: 100%;
-        }
-    } 
-
-
-    .userProfileImg {
-        position: absolute;
-        top: 70%;
-        // top: -10%;
-        left: 50%;
-        transform: translate(-50%);
-        img {
-            object-fit: cover;
-            border-radius: 50%;
-            width: 4.5rem;
-            height: 4.3rem;
-        }
-    
-        }
+ 
+    .userProfileImg {   
+   
+    img {
+        object-fit: cover;
+        border-radius: 50%;
+        width: 6.5rem;
+        height: 6.5rem;
     }
 
- .userName {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    }
+}
 
- }
+.userName {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color:var(--bg-color);
+padding: 1rem;
+color:var(--text-color);
+border-radius: 10px;
 
- .userProgres {
-    display: flex;
-    gap: 2rem;
-    text-align: center;
-    
- }
+}
+
+.userProgres {
+display: flex;
+gap: 2rem;
+text-align: center;
+border-radius: 10px;
+background-color: var(--bg-color);
+padding: 1rem;
 
 }
 
 .userActions {
+    border-radius: 10px;
+
             width: 100%;
+            background-color: var(--bg-color);
+            padding: 1rem;
 
     .userActionsForm {
 
@@ -94,3 +96,6 @@
         }
     }
 }
+
+
+//media queres

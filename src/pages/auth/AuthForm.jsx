@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./AuthForm.module.scss";
 import { useNavigate } from "react-router-dom";
+import imgDeco from "../../assets/authdeco/authdeco.svg";
 
 const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);

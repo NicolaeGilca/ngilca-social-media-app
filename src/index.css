@@ -6,7 +6,7 @@
   --text-second-color:#333333;
   --bg-color: #141414;
   --bg-active: #000;
-  --accent-color: #430ec9;
+  --accent-color: #6043BD;
   --main-title-color: #fff;
   --second-title-color: #858585;
   --text-accent-btn:#fff;
@@ -14,7 +14,7 @@
 }
 
 .lightMode {
-  --btn-color:#0E48C9;
+  --btn-color:#6043BD;
   --bg-second-color:#dbdbdb;
   --text-color:#010101;
   --text-second-color:#cccccc;

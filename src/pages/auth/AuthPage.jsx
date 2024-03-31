@@ -1,11 +1,11 @@
 import AuthForm from "./AuthForm";
 
 const AuthPage = () => {
-    return (
-        <>
-            <AuthForm />
-        </>
-    )
-}
+  return (
+    <>
+      <AuthForm />
+    </>
+  );
+};
 
 export default AuthPage;

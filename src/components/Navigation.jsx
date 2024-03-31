@@ -28,11 +28,11 @@ const Navigation = () => {
   };
   return (
     <header>
-      <Link to="/">
+      <NavLink to="/">
         <div className={styles.logo}>
           <img src={flow} width="70" height="70" alt="logo" />
         </div>
-      </Link>
+      </NavLink>
       <div>
         <div className={styles.menu}>
           <div className={styles.menuItemProfile}>
