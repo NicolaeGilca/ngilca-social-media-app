@@ -11,7 +11,7 @@ const User = () => {
           alt="userImg"
         />
         <div className={style.userGreetings}>
-          <span> Hi, Nicolas G</span>
+          <span> Hi, Nicolae G</span>
           <p>Good morning!</p>
         </div>
       </div>
