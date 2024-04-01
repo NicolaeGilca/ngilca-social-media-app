@@ -2,7 +2,7 @@ import style from "./RightSide.module.scss";
 
 const RightSideUserDesc = () => {
   const userInfo = {
-    username: "Nicolas G",
+    username: "Nicolae G",
     backgoundImg: "/src/pages/startingPage/rightSide/imgs/background.jpg",
     profileImg: "/src/pages/startingPage/rightSide/imgs/profilephoto.jpeg",
   };

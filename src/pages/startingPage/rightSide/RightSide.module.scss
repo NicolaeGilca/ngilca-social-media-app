@@ -41,6 +41,12 @@ color:var(--text-color);
 border-radius: 10px;
 
 }
+.userComment {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--second-title-color);
+    padding: 0.5rem 0;
+}
 
 .userProgres {
 display: flex;
